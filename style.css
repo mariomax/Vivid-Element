@@ -9,3 +9,23 @@ Version: 1.0
 */
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
+
+/* Fonts */
+h1,
+h2,
+h3,
+h4,
+nav,
+.oceanwp-instagram-link {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.page-header {
+  display: none;
+}
+
+.tagline p { 
+  margin: 0;
+}
