@@ -39,6 +39,7 @@ h2 {
   font-size: 26px;
   font-weight: 500;
 }
+
 h3 {
   color: var(--nav);
   font-size: 22px;
@@ -60,6 +61,16 @@ p {
 table td,
 .single .entry-title {
   border-bottom: none;
+}
+
+.store-list a {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.store-list a:hover {
+  color: var(--hover);
+  text-decoration: underline;
 }
 
 /* Thanks WooCommerce for requiring !important on any out-of-the-box style. */
@@ -108,6 +119,32 @@ table td,
   margin-left: .5em;
   margin-top: 0 !important;
 } */
+
+/* Sidebar */
+
+#sbi_load a {
+  font-family: brandon-grotesque, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
+#sb_instagram #sbi_load .sbi_load_btn {
+  background: var(--text);
+}
+
+#sb_instagram #sbi_load .sbi_load_btn:hover {
+  -webkit-box-shadow: inset 0 0 10px 20px var(--teal);
+          box-shadow: inset 0 0 10px 20px var(--teal);
+}
+
+#sb_instagram .sbi_follow_btn a {
+  background: var(--nav);
+}
+
+#sb_instagram .sbi_follow_btn a:hover {
+  -webkit-box-shadow: inset 0 0 10px 20px var(--hover);
+  box-shadow: inset 0 0 10px 20px var(--hover);
+}
 
 @media (min-width: 768px) {
 
