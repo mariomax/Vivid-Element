@@ -63,6 +63,33 @@ table td,
   border-bottom: none;
 }
 
+.wp-block-button__link {
+  border-radius: 3px;
+}
+
+.stores-button {
+  padding: 2em 0;
+}
+
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+}
+.media-button {
+  background: var(--nav);
+  border-radius: 3px;
+  color: #FFF;
+  margin-top: 2em;
+  padding: 12px 24px;
+}
+
+.media-button:hover {
+  background: var(--hover);
+  color: #FFF;
+}
+
 .store-list a {
   font-size: 20px;
   font-weight: 500;
@@ -72,6 +99,11 @@ table td,
   color: var(--hover);
   text-decoration: underline;
 }
+
+.line-break {
+  border-bottom: 2px solid var(--teal);
+}
+
 
 /* Thanks WooCommerce for requiring !important on any out-of-the-box style. */
 .woocommerce .elementor-widget-woocommerce-product-price .price,
