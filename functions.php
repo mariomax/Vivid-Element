@@ -28,3 +28,15 @@ function oceanwp_child_enqueue_parent_style() {
 	
 }
 add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
+
+function my_wp_nav_menu_args( $args = '' ) {
+ 
+	if( is_user_logged_in() ) { 
+			$args['menu'] = 'Wholesale Menu';
+	} else { 
+			$args['menu'] = 'Main Menu';
+	} 
+			return $args;
+	}
+	add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
+	
