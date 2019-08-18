@@ -19,24 +19,25 @@
  *
  * @link http://codex.wordpress.org/Child_Themes
  */
-function oceanwp_child_enqueue_parent_style() {
-	// Dynamically get version number of the parent stylesheet (lets browsers re-cache your stylesheet when you update your theme)
-	$theme   = wp_get_theme( 'OceanWP' );
-	$version = $theme->get( 'Version' );
-	// Load the stylesheet
-	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'oceanwp-style' ), $version );
-	
-}
-add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
+function oceanwp_child_enqueue_parent_style()
+{
+    // Dynamically get version number of the parent stylesheet (lets browsers re-cache your stylesheet when you update your theme)
+    $theme = wp_get_theme('OceanWP');
+    $version = $theme->get('Version');
+    // Load the stylesheet
+    wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/style.css', array('oceanwp-style'), $version);
 
-function my_wp_nav_menu_args( $args = '' ) {
- 
-	if( is_user_logged_in() ) { 
-			$args['menu'] = 'Wholesale Menu';
-	} else { 
-			$args['menu'] = 'Main Menu';
-	} 
-			return $args;
-	}
-	add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
-	
+}
+add_action('wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style', PHP_INT_MAX);
+
+function my_wp_nav_menu_args($args = '')
+{
+
+    if (is_user_logged_in()) {
+        $args['menu'] = 'Wholesale Menu';
+    } else {
+        $args['menu'] = 'Main Menu';
+    }
+    return $args;
+}
+add_filter('wp_nav_menu_args', 'my_wp_nav_menu_args');

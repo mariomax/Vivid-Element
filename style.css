@@ -132,7 +132,7 @@ table td,
           flex-flow: column-reverse;
 }
 
-/* Thanks WooCommerce for requiring !important on any out-of-the-box style. */
+/* Thanks WooCommerce for using !important in your out-of-the-box style. */
 .woocommerce .elementor-widget-woocommerce-product-price .price,
 .woocommerce-variation-price {
   font-weight: 500 !important;
@@ -143,8 +143,8 @@ table td,
 }
 
 .woocommerce div.product form.cart {
-  border-bottom: none !important;
-  border-top: none !important;
+  border-bottom: none;
+  border-top: none;
 }
 
 .woocommerce div.product.elementor form.cart table.variations tr {
