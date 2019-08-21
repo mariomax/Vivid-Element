@@ -117,7 +117,7 @@ table td,
 
 .elementor-social-icon:hover {
   background-color: var(--brightG) !important;
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 .aside-img img {
@@ -128,11 +128,26 @@ table td,
 .enjoy-block {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-      -ms-flex-flow: column-reverse;
-          flex-flow: column-reverse;
+  -ms-flex-flow: column-reverse;
+  flex-flow: column-reverse;
 }
 
 /* Thanks WooCommerce for using !important in your out-of-the-box style. */
+.woocommerce div.product .product_title {
+  line-height: 1.3;
+}
+
+.woocommerce ul.products li.product .woo-entry-inner li.title a {
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.woo-entry-image img {
+  border-radius: 3px;
+}
+
 .woocommerce .elementor-widget-woocommerce-product-price .price,
 .woocommerce-variation-price {
   font-weight: 500 !important;
@@ -176,23 +191,16 @@ table td,
   color: var(--teal) !important;
 }
 
-/* .woocommerce div.product form.cart .variations .reset_variations {
-  border: 1px solid #ddd !important;
-  border-radius: 0 !important;
-  margin-left: .5em;
-  margin-top: 0 !important;
-} */
-
 /* Sidebar */
 
 .oceanwp-recent-posts .recent-posts-info,
 .oceanwp-recent-posts .recent-posts-date,
 .oceanwp-recent-posts .recent-posts-comments a {
-  color: var(--text) !important;
+  color: var(--text);
 }
 
 #sbi_load a {
-  font-family: brandon-grotesque, sans-serif !important;
+  font-family: brandon-grotesque, sans-serif;
   font-size: 14px !important;
   font-weight: 500;
 }
@@ -219,10 +227,10 @@ table td,
 @media (min-width: 768px) {
 
   /* Header */
-  .elementor-nav-menu__text-align-center .elementor-nav-menu--dropdown .elementor-nav-menu a {
-    -webkit-box-pack: end !important;
-    -ms-flex-pack: end !important;
-    justify-content: flex-end !important;
+  #menu-2-1f4a6228 li a {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     padding-right: 30px;
   }
 
@@ -249,8 +257,8 @@ table td,
   .enjoy-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: inherit;
-            flex-flow: inherit;
+    -ms-flex-flow: inherit;
+    flex-flow: inherit;
   }
 
   .woocommerce-MyAccount-tabs {
