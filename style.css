@@ -148,6 +148,11 @@ table td,
   border-radius: 3px;
 }
 
+.woocommerce button.button {
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+
 .woocommerce .elementor-widget-woocommerce-product-price .price,
 .woocommerce-variation-price {
   font-weight: 500 !important;
@@ -191,8 +196,22 @@ table td,
   color: var(--teal) !important;
 }
 
-/* Sidebar */
+/* My Account page */
+.woocommerce .oceanwp-loginform-wrap .form-row label.woocommerce-form__label {
+  margin: 0 15px 0 0;
+}
 
+.woocommerce .owp-account-links li .owp-account-link {
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 28px;
+  color: var(--nav);
+}
+
+h2.details-title {
+  margin: 20px 0;
+}
+
+/* Sidebar */
 .oceanwp-recent-posts .recent-posts-info,
 .oceanwp-recent-posts .recent-posts-date,
 .oceanwp-recent-posts .recent-posts-comments a {
@@ -223,7 +242,6 @@ table td,
   box-shadow: inset 0 0 10px 20px var(--hover);
 }
 
-
 @media (min-width: 768px) {
 
   /* Header */
@@ -247,7 +265,7 @@ table td,
 
   /* My Account page */
   .details-title {
-    padding-top: 170px;
+    padding-top: 20px;
   }
 
   .aside-img img {
