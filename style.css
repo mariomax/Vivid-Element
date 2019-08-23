@@ -132,6 +132,10 @@ table td,
   flex-flow: column-reverse;
 }
 
+.elementor-8 .elementor-element.elementor-element-fa13345 .elementor-icon-list-text:hover {
+  color: var(--hover);
+}
+
 /* Thanks WooCommerce for using !important in your out-of-the-box style. */
 .woocommerce div.product .product_title {
   line-height: 1.3;
