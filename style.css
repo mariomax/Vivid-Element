@@ -43,13 +43,20 @@ h2 {
 
 h3 {
   color: var(--nav);
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
 }
 
 p,
 li {
   color: var(--text);
+}
+
+.cat-title h5 {
+  color: var(--nav);
+  font-family: brandon-grotesque, sans-serif !important;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .page-header {
