@@ -52,6 +52,10 @@ li {
   color: var(--text);
 }
 
+#CTA-button .elementor-button-text {
+  font-family: brandon-grotesque, sans-serif !important;
+}
+
 .cat-title h5 {
   color: var(--nav);
   font-family: brandon-grotesque, sans-serif !important;
