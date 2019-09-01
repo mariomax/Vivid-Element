@@ -29,7 +29,8 @@ nav,
 .price,
 .wholesale_price_title,
 .oceanwp-instagram-link,
-.elementor-post__read-more {
+.elementor-post__read-more,
+a.recent-posts-title {
   font-family: brandon-grotesque, sans-serif !important;
   font-weight: 400;
   font-style: normal;
@@ -77,16 +78,6 @@ table td,
 
 .wp-block-button__link {
   border-radius: 3px;
-}
-
-.button-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 2em 0;
 }
 
 .media-button {
@@ -217,6 +208,17 @@ table td,
   color: var(--teal) !important;
 }
 
+.woocommerce-message a {
+  border-radius: 3px;
+  padding: 12px 20px;
+  text-transform: capitalize;
+}
+
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+
 /* My Account page */
 .woocommerce .oceanwp-loginform-wrap .form-row label.woocommerce-form__label {
   margin: 0 15px 0 0;
@@ -237,6 +239,10 @@ h2.details-title {
 .oceanwp-recent-posts .recent-posts-date,
 .oceanwp-recent-posts .recent-posts-comments a {
   color: var(--text);
+}
+
+a.recent-posts-title {
+  font-size: 16px;
 }
 
 #sbi_load a {
