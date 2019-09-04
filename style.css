@@ -137,6 +137,12 @@ table td,
 
 .post-img img {
   border-radius: 3px;
+  padding-bottom: 1em;
+}
+
+.post-img figcaption {
+  margin-top: 0;
+  margin-bottom: 2em;
 }
 
 .enjoy-block {
