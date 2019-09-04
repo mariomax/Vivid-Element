@@ -76,27 +76,6 @@ table td,
   border-bottom: none;
 }
 
-.wp-block-button__link {
-  border-radius: 3px;
-}
-
-.media-button {
-  background: var(--nav);
-  border-radius: 3px;
-  color: #FFF;
-  margin-top: 2em;
-  padding: 12px 24px;
-}
-
-.media-button:hover {
-  background: var(--hover);
-  color: #FFF;
-}
-
-.stores-button {
-  padding: 2em 0;
-}
-
 .cat-title h5 {
   color: var(--nav);
   font-family: brandon-grotesque, sans-serif !important;
@@ -123,6 +102,29 @@ table td,
   border-bottom: 2px solid var(--teal);
 }
 
+/* Buttons */
+
+.wp-block-button__link {
+  border-radius: 3px;
+}
+
+.media-button {
+  background: var(--nav);
+  border-radius: 3px;
+  color: #FFF;
+  margin-top: 2em;
+  padding: 12px 24px;
+}
+
+.media-button:hover {
+  background: var(--hover);
+  color: #FFF;
+}
+
+.stores-button {
+  padding: 2em 0;
+}
+
 .elementor-social-icon:hover {
   background-color: var(--brightG) !important;
   opacity: 1;
@@ -133,11 +135,21 @@ table td,
   margin-bottom: 25px;
 }
 
+.post-img img {
+  border-radius: 3px;
+}
+
 .enjoy-block {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
   -ms-flex-flow: column-reverse;
   flex-flow: column-reverse;
+}
+
+hr.wp-block-separator.is-style-wide {
+  border-bottom: 1px solid var(--teal);
+  max-width: 70%;
+  margin: 2em auto;
 }
 
 .elementor-8 .elementor-element.elementor-element-fa13345 .elementor-icon-list-text:hover {
@@ -337,7 +349,7 @@ a.recent-posts-title {
   }
 }
 
-/* LAPTOP ================================================================================= */
+/* LARGE TABLET =========================================================================== */
 
 @media (min-width: 1024px) {
   .cat-title ul li {
@@ -353,6 +365,8 @@ a.recent-posts-title {
     margin-bottom: 35rem !important;
   }
 }
+
+/* LAPTOP ================================================================================= */
 
 @media (min-width: 1280px) {
   .woocommerce-MyAccount-tabs {
