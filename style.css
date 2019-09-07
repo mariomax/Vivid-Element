@@ -54,6 +54,11 @@ li {
   color: var(--text);
 }
 
+ul#menu-2-65a5d20,
+ul#menu-2-1f4a6228 {
+  height: 100vh;
+}
+
 #CTA-button .elementor-button-text {
   font-family: brandon-grotesque, sans-serif !important;
 }
@@ -137,7 +142,7 @@ table td,
 
 .post-img img {
   border-radius: 3px;
-  padding-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .post-img figcaption {
