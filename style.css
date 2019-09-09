@@ -103,11 +103,32 @@ table td,
   text-decoration: underline;
 }
 
+.other-currency p {
+  color: #333;
+  font-family: brandon-grotesque, sans-serif;
+  margin: 0;
+}
+
+.elementor-508 .elementor-element.elementor-element-a5db742 {
+  margin-bottom: 0;
+}
+
 .line-break {
   border-bottom: 2px solid var(--teal);
 }
 
+section#comments {
+  margin-top:0;
+  padding-top: 20px;
+  border-top: none;
+}
+
 /* Buttons */
+
+.button,
+input[type="submit"] {
+  text-transform: capitalize;
+}
 
 .wp-block-button__link {
   border-radius: 3px;
