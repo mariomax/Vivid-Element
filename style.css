@@ -12,7 +12,8 @@ Version: 1.0
 
 /* Color Palette */
 :root {
-  --teal: #00A79D;
+  --tealAim: #00857C;
+  --teal: #00a79d;
   --darkG: #2AB673;
   --brightG: #8DC63F;
   --nav: #247D9E;
@@ -74,6 +75,10 @@ ul#menu-2-1f4a6228 {
 
 .tagline p {
   margin: 0;
+}
+
+.wp-block-image figcaption {
+  color: var(--text);
 }
 
 table td,
@@ -249,7 +254,7 @@ hr.wp-block-separator.is-style-wide {
 }
 
 .wholesale_price_title {
-  color: var(--teal) !important;
+  color: var(--tealAim) !important;
 }
 
 .woocommerce-message a {
