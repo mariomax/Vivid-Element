@@ -112,7 +112,7 @@ table td,
 }
 
 .other-currency p {
-  color: #333;
+  color: var(--teal);
   font-family: brandon-grotesque, sans-serif;
   margin: 0;
 }
@@ -319,6 +319,20 @@ a.recent-posts-title {
 #sb_instagram .sbi_follow_btn a:hover {
   -webkit-box-shadow: inset 0 0 10px 20px var(--hover);
   box-shadow: inset 0 0 10px 20px var(--hover);
+}
+
+.lp-title h2 {
+  font-size: 4em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.elementor-element-b6d3091 .woocommerce ul.products li.product {
+  background-color: #FFF;
+}
+
+.elementor-element-b6d3091 .woocommerce ul.products li.product .woo-entry-inner h2 {
+  text-align: center;
 }
 
 /* TABLET ================================================================================= */
