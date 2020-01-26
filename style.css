@@ -207,6 +207,10 @@ input[type="submit"] {
   margin: 0 auto !important;
 }
 
+.elementor .elementor-widget:not(.elementor-widget-text-editor) figure {
+  margin: 0 auto;
+}
+
 .post-img figcaption {
   margin-top: 0;
   margin-bottom: 2em;
