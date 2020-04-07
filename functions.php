@@ -41,3 +41,21 @@ function my_wp_nav_menu_args($args = '')
     return $args;
 }
 add_filter('wp_nav_menu_args', 'my_wp_nav_menu_args');
+
+/**
+ * Set maximum shipping cost in WooCommerce
+ */
+add_filter( 'woocommerce_package_rates' , 'woocommerce_set_maximum_shipping_cost', 10, 2 );
+function woocommerce_set_maximum_shipping_cost( $rates, $package ) {
+ 
+	foreach( $rates as $rate ) {
+		// Change 10 to your maximum shipping cost
+		if( $rate->cost > 14.50 ) {
+			$rate->cost = 14.50;
+		}
+
+	}
+ 
+	return $rates;
+ 
+}

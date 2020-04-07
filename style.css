@@ -308,6 +308,16 @@ hr.wp-block-separator.is-style-wide {
   text-transform: capitalize;
 }
 
+.woocommerce ul {
+  list-style: circle;
+  margin-left: 2em;
+  margin-bottom: 2em;
+}
+
+.postid-3391 .elementor-element.elementor-element-2282939 {
+  display: none;
+}
+
 /* My Account page */
 .woocommerce .oceanwp-loginform-wrap .form-row label.woocommerce-form__label {
   margin: 0 15px 0 0;
