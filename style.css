@@ -314,6 +314,11 @@ hr.wp-block-separator.is-style-wide {
   margin-bottom: 2em;
 }
 
+ul#shipping_method {
+  list-style: none;
+  margin-left: 0;
+}
+
 .postid-3391 .elementor-element.elementor-element-2282939 {
   display: none;
 }
