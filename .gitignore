@@ -22,3 +22,7 @@ wp-content/plugins/hello.php
 /searchform.php
 /icons-list.php
 /social-icons.php
+
+error_log
+wc-formatting-functions.php
+class-uwa-front.php

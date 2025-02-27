@@ -31,10 +31,17 @@ nav,
 .wholesale_price_title,
 .oceanwp-instagram-link,
 .elementor-post__read-more,
-a.recent-posts-title {
+a.recent-posts-title,
+p.stock,
+button[type="submit"].single_add_to_cart_button {
   font-family: brandon-grotesque, sans-serif !important;
   font-weight: 400;
   font-style: normal;
+}
+
+button[type="submit"].single_add_to_cart_button {
+  font-size: 20px;
+  font-weight: 800;
 }
 
 h2 {
@@ -93,9 +100,10 @@ ul#menu-2-1f4a6228 {
   margin: 0;
 }
 
-.home-subtitle  h2 {
+.home-subtitle h2 {
   text-align: center;
 }
+
 .wp-block-image figcaption {
   color: var(--text);
 }
@@ -142,12 +150,19 @@ table td,
 }
 
 section#comments {
-  margin-top:0;
+  margin-top: 0;
   padding-top: 20px;
   border-top: none;
 }
 
 /* Buttons */
+.elementor-button-wrapper .elementor-button-text,
+.elementor-cta__button-wrapper a,
+.elementor-post .elementor-post__text a.elementor-post__read-more {
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 20px !important;
+  text-transform: uppercase;
+}
 
 .button,
 input[type="submit"] {
@@ -180,6 +195,23 @@ input[type="submit"] {
   opacity: 1;
 }
 
+.woocommerce .outofstock-badge {
+  font-family: 'brandon-grotesque', sans-serif;
+  font-weight: 800  !important;
+  font-size: 22px  !important;
+  background-color: #247D9E  !important;
+}
+
+#v-cats .woocommerce.widget_product_categories li {
+  font-family: 'brandon-grotesque', sans-serif;
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+#v-cats .woocommerce.widget_product_categories li a {
+  border-bottom: none;
+}
+
 /* Blog & Images */
 .aside-img img {
   border-radius: 3px;
@@ -192,6 +224,8 @@ input[type="submit"] {
 }
 
 .wp-block-gallery .blocks-gallery-item figure {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
 }
 
@@ -219,7 +253,6 @@ input[type="submit"] {
 .enjoy-block {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-  -ms-flex-flow: column-reverse;
   flex-flow: column-reverse;
 }
 
@@ -271,7 +304,6 @@ hr.wp-block-separator.is-style-wide {
 .woocommerce div.product.elementor form.cart table.variations tr {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -319,7 +351,27 @@ ul#shipping_method {
   margin-left: 0;
 }
 
-.postid-3391 .elementor-element.elementor-element-2282939 {
+uwa_auction_bage_icon {
+  display: none;
+}
+
+ul.woocommerce-error {
+  background-color: #FFF !important;
+}
+
+.woocommerce-error a {
+  float: none;
+  padding: 16px 22px;
+  margin-left: 2rem;
+}
+
+/* Auction */
+body:not(.rtl) .elementor-508 .elementor-element.elementor-element-a7033fa .quantity+.button {
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+.uwa_auction_bage_icon {
   display: none;
 }
 
@@ -360,7 +412,6 @@ a.recent-posts-title {
 }
 
 #sb_instagram #sbi_load .sbi_load_btn:hover {
-  -webkit-box-shadow: inset 0 0 10px 20px var(--teal);
   box-shadow: inset 0 0 10px 20px var(--teal);
 }
 
@@ -369,7 +420,6 @@ a.recent-posts-title {
 }
 
 #sb_instagram .sbi_follow_btn a:hover {
-  -webkit-box-shadow: inset 0 0 10px 20px var(--hover);
   box-shadow: inset 0 0 10px 20px var(--hover);
 }
 
@@ -393,9 +443,13 @@ a.recent-posts-title {
   /* Header */
   #menu-2-1f4a6228 li a {
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
     justify-content: flex-end;
     padding-right: 30px;
+  }
+
+  #laptop-logo,
+  ul#menu-1-1f4a6228 {
+    margin-bottom: 10px !important;
   }
 
   h2 {
@@ -431,7 +485,6 @@ a.recent-posts-title {
   .enjoy-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-flow: inherit;
     flex-flow: inherit;
   }
 
@@ -442,7 +495,6 @@ a.recent-posts-title {
   .woocommerce div.product.elementor form.cart table.variations tr {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
   }
 
@@ -478,4 +530,18 @@ a.recent-posts-title {
   .woocommerce-MyAccount-tabs {
     margin-bottom: 27vh !important;
   }
+}
+
+#uwa_auction_form #placebidbutton {
+  margin-left: 0;
+  margin-top: 1rem;
+}
+
+.buy-now.cart .uwa_buttons .single_add_to_cart_button {
+  margin-left: 0;
+}
+
+.buy-now.cart .uwa_buttons .woocommerce-Price-amount {
+  color: #FFF;
+  padding-left: 1rem;
 }
