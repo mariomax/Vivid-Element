@@ -346,6 +346,12 @@ hr.wp-block-separator.is-style-wide {
   margin-bottom: 2em;
 }
 
+.woocommerce #payment ul {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 2em;
+}
+
 ul#shipping_method {
   list-style: none;
   margin-left: 0;
